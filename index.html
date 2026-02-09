@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>בדיקת קוד</title>
+</head>
+<body>
+
+<h2>הכנס קוד</h2>
+
+<input type="password" id="codeInput">
+<button onclick="checkCode()">בדוק</button>
+
+<p id="result"></p>
+
+<script>
+  function checkCode() {
+    const code = document.getElementById("codeInput").value;
+
+    if (code === "1234") {
+      document.getElementById("result").innerText = "🔓 נפתח!";
+    } else {
+      document.getElementById("result").innerText = "❌ קוד שגוי";
+    }
+  }
+</script>
+
+</body>
+</html>
